@@ -1,0 +1,10 @@
+create database students;
+use students;
+create table students(student_id int, name varchar(50), age int,course varchar(40) , marks int, tech varchar(100));
+describe students;
+insert into students(student_id,name, age,course,marks,tech)values(1,"semon",21,"mca",76,"Java"),(1,"semon",21,"mca",76,"Java"),(1,"semon",21,"mca",76,"Java"),(1,"semon",21,"mca",76,"Java");
+show tables;
+select * from students where course="mca";
+select * from students where course!="mca";
+select * from students where course="mca" AND marks>50;
+select * from students where course="mca" OR marks<50;
