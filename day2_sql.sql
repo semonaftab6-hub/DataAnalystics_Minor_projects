@@ -8,3 +8,6 @@ select * from students where course="mca";
 select * from students where course!="mca";
 select * from students where course="mca" AND marks>50;
 select * from students where course="mca" OR marks<50;
+select * from students where marks between 80 and 90;
+select * from students where course in("bca","mca");
+select * from students where course not in("bca");
